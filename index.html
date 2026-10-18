@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krit's Terminal | Web Dev Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="path">krit@github-pages: ~/web-dev-lab</span>
+      <button id="modeBtn" class="mode">[ paper mode ]</button>
+    </div>
+
+    <div class="screen">
+      <p class="prompt"><span class="user">krit@lab</span>:~$ whoami</p>
+      <h1>Krit's Web Development Lab</h1>
+      <p class="info">ชื่อ: กฤต สุขศิริวรานนท์ <span class="sep">//</span> รหัสนิสิต: 67160312</p>
+
+      <p class="prompt"><span class="user">krit@lab</span>:~$ ./greet.sh</p>
+      <p id="output" class="output">_</p>
+      <button id="runBtn" class="run">▶ Run greet.sh</button>
+
+      <section id="about">
+        <p class="prompt"><span class="user">krit@lab</span>:~$ cat about.txt</p>
+        <h2># About Me</h2>
+        <p>ผมชื่อกฤต กำลังศึกษาการพัฒนาเว็บ ชอบทำความเข้าใจว่าโค้ดเดินทางจากเครื่องตัวเองไปถึงผู้ใช้ได้อย่างไร
+          แลปนี้ทำให้เห็นว่าแค่ <code>git push</code> ครั้งเดียว GitHub Actions ก็พาเว็บขึ้นออนไลน์ให้อัตโนมัติ</p>
+      </section>
+
+      <section id="skills">
+        <p class="prompt"><span class="user">krit@lab</span>:~$ ls skills/</p>
+        <h2># Skills</h2>
+        <ul class="bars">
+          <li><span>HTML</span><div class="bar"><i style="--w:80%"></i></div></li>
+          <li><span>CSS</span><div class="bar"><i style="--w:70%"></i></div></li>
+          <li><span>JavaScript</span><div class="bar"><i style="--w:60%"></i></div></li>
+          <li><span>Git</span><div class="bar"><i style="--w:65%"></i></div></li>
+          <li><span>CI/CD</span><div class="bar"><i style="--w:50%"></i></div></li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <p class="prompt"><span class="user">krit@lab</span>:~$ cat contact.txt</p>
+        <h2># Contact</h2>
+        <p>email&nbsp;&nbsp;→ <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>github → <a href="https://github.com/YOUR_USERNAME">github.com/YOUR_USERNAME</a></p>
+      </section>
+
+      <p class="prompt"><span class="user">krit@lab</span>:~$ <span class="cursor">█</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
